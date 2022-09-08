@@ -21,14 +21,22 @@ import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
+import { UsersComponent } from './users/users.component';
+import { ClientsComponent } from './clients/clients.component';
+import { HomeComponent } from './home/home.component';
+import { BussinessComponent } from './bussiness/bussiness.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     LoginComponent,
     SignupComponent,
-    HomeHeaderComponent
+    HomeHeaderComponent,
+    UsersComponent,
+    ClientsComponent,
+    BussinessComponent
   ],
   imports: [
     BrowserModule,
