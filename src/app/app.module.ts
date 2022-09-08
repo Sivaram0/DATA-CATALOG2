@@ -20,13 +20,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
+import { HomeHeaderComponent } from './home-header/home-header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HomeHeaderComponent
   ],
   imports: [
     BrowserModule,
