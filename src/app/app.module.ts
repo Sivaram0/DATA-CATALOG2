@@ -25,7 +25,7 @@ import { UsersComponent } from './users/users.component';
 import { ClientsComponent } from './clients/clients.component';
 import { HomeComponent } from './home/home.component';
 import { BussinessComponent } from './bussiness/bussiness.component';
-
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { BussinessComponent } from './bussiness/bussiness.component';
     HomeHeaderComponent,
     UsersComponent,
     ClientsComponent,
-    BussinessComponent
+    BussinessComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +57,8 @@ import { BussinessComponent } from './bussiness/bussiness.component';
     MatIconModule,
     MatInputModule,
     MatRadioModule,
-    ReactiveFormsModule,  
+    ReactiveFormsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

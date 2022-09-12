@@ -1,14 +1,6 @@
 .body{
     overflow: hidden;
-}
-.nav {
-    background-color: rgb(4, 192, 255); 
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
+} 
   .nav li {
     display: inline-block;
     font-size: 20px;
