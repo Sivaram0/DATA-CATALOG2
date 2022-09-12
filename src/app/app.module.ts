@@ -20,12 +20,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
-import { HomeHeaderComponent } from './home-header/home-header.component';
-import { UsersComponent } from './users/users.component';
-import { ClientsComponent } from './clients/clients.component';
+import { UsersComponent } from './BussinessData/users/users.component';
+import { ClientsComponent } from './BussinessData/clients/clients.component';
 import { HomeComponent } from './home/home.component';
-import { BussinessComponent } from './bussiness/bussiness.component';
+import { BussinessComponent } from './BussinessData/bussiness/bussiness.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegisterationComponent } from './Exam/registeration/registeration.component';
+import { SampleQPaperComponent } from './Exam/sample-q-paper/sample-q-paper.component';
+import { ResultsComponent } from './Exam/results/results.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +35,13 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    HomeHeaderComponent,
     UsersComponent,
     ClientsComponent,
     BussinessComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterationComponent,
+    SampleQPaperComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

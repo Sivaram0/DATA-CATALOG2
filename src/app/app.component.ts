@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, HostListener } from '@angular/core';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  constructor(private _location: Location) 
+  {}
 }
