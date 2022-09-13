@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { UsersComponent } from './BussinessData/users/users.component';
 import { RegisterationComponent } from './Exam/registeration/registeration.component';
+import { SampleQPaperComponent } from './Exam/sample-q-paper/sample-q-paper.component';
+import { ResultsComponent } from './Exam/results/results.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login',pathMatch:'full'},
@@ -18,8 +20,16 @@ const routes: Routes = [
     {path:'clients', component:ClientsComponent},
     {path:'users', component:UsersComponent}
     ]
-  }
-,
+  },
+  {path:'registeration', component:RegisterationComponent,
+     children: [
+      { path:'sample-q-paper', component:SampleQPaperComponent,
+      children:[
+        {path:'results', component:ResultsComponent}
+      ]
+    }
+    ]
+  },
   { path:'registeration', component:RegisterationComponent},
   {path: '**', redirectTo:'home', pathMatch: 'full'}
   
