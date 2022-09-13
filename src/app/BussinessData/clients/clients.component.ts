@@ -24,32 +24,35 @@ export class ClientsComponent implements OnInit {
     },
     {
       title: 'two',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+      description: 'Some quick example tulk of the card content',
       buttonText: 'Button',
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg',
       country: 'canada'
     },
     {
       title: 'three',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+      description: 'Some quick example text to the bulk of the card content',
       buttonText: 'Button',
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg',
       country: 'brazil'
     },
     {
       title: 'four',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+      description: 'Some quick example textake up the bulk of the card content',
       buttonText: 'Button',
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg',
       country: 'landon'
     },
 
   ];
+  private users = ['title', 'description','country'];
+  dataSource = new MatTableDataSource(this.users);
   constructor() { }
 
   ngOnInit(): void {
   }
-  applyFilter(){
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }

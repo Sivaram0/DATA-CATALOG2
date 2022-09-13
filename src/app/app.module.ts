@@ -18,7 +18,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
-import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { UsersComponent } from './BussinessData/users/users.component';
 import { ClientsComponent } from './BussinessData/clients/clients.component';
@@ -28,6 +27,12 @@ import { FooterComponent } from './footer/footer.component';
 import { RegisterationComponent } from './Exam/registeration/registeration.component';
 import { SampleQPaperComponent } from './Exam/sample-q-paper/sample-q-paper.component';
 import { ResultsComponent } from './Exam/results/results.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -62,7 +67,13 @@ import { ResultsComponent } from './Exam/results/results.component';
     MatInputModule,
     MatRadioModule,
     ReactiveFormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FormsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

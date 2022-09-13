@@ -1,10 +1,14 @@
-<body>    
-    <div> 
-        <a routerLink="/home"> <mat-icon aria-hidden="false" class="home" aria-label="Example home icon" fontIcon="home"></mat-icon> </a> &nbsp; 
-        <!-- <li><a class="anch" routerLink="/clients"> Clients </a></li>
-        <li><a class="anch" routerLink="/users"> Users</a></li>  
-        <li><a class="anch" href="#bussiness"> bussiness </a></li> -->
-    </div>
-    <router-outlet></router-outlet>
-    <!-- <app-footer></app-footer> -->
-</body>
+
+<nav class="navbar navbar-toggleable-xs">
+    <mat-toolbar >
+      <span class="navbar-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+        <button mat-button routerLink="/home">
+          <mat-icon>home</mat-icon> 
+        </button>
+        <button mat-button routerLink="/about" routerLink=""><mat-icon>perm_identity</mat-icon></button>
+        <a mat-button routerLink="/capm"><mat-icon>logout</mat-icon></a>
+      </div>
+    </mat-toolbar>
+      <router-outlet></router-outlet>
+      <!-- <app-clients></app-clients> -->

@@ -1,12 +1,15 @@
-.body{
-    overflow: hidden;
-} 
-  .nav li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-  }
+.navbar-spacer {
+  flex: 1 1 auto;
+}
 
-
+.header {
+  min-width: 319px;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.mat-toolbar{
+  background-color:rgb(191, 133, 244);
+  color:white;
   
-  
+}
