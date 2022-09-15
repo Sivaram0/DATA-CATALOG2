@@ -1,0 +1,48 @@
+
+ [ {
+        "title": "Paul L naurshki",
+        "country": "USA",
+        "buttonText": "View More",
+        "img": "assets/smith.jpg"
+        
+      },
+      {
+        "title": "padma kiran",
+        "country": "INDIA",
+        "buttonText": "View More",
+        "img": "assets/padma.jpg"
+      },
+      {
+        "title": "steve rojers",
+        "country": "newziland",
+        "buttonText": "View More",
+        "img": "assets/smith.jpg"
+      },
+      
+      {
+        "title": "sachin kumar",
+        "country": "INDIA",
+        "buttonText": "View more",
+        "img": "assets/sachin.jpg"
+      },
+      {
+       "title": "Leandro deco prio",
+        "country": "california",
+        "buttonText": "View more",
+        "img": "assets/decoprio.jpg"
+      },
+      {
+        "title": "Will Smith",
+        "country": "uk",
+        "buttonText": "View_more",
+        "img": "assets/smith.jpg"
+      },
+      {
+        "title": "Bedik",
+        "country": "belgium",
+        "buttonText": "View More",
+        "img": "assets/smith.jpg"
+      }
+      
+      ]
+    

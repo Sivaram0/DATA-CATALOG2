@@ -1,21 +1,77 @@
-
-<mat-grid-list cols="3" >
+<!-- <mat-grid-list cols="3" >
     <mat-grid-tile>
-        <mat-card class="card">
-            <img class="img" src="assets\bussiness.png"> &nbsp;
+        <mat-card class="example-card">
+            <img mat-card-sm-image class="img" src="assets\bussiness.png"> &nbsp;
             <button mat-raised-button color="primary" routerLink="/bussiness">Bussiness  <mat-icon> monetization_on</mat-icon></button>
         </mat-card>
     </mat-grid-tile>
     <mat-grid-tile>
-        <mat-card class="card">
-            <img class="img" src="assets\exam.webp"> &nbsp;
+        <mat-card class="example-card">
+            <img mat-card-sm-image class="img" src="assets\exam.webp"> &nbsp;
             <button mat-raised-button color="primary" routerLink="/registeration"> Exam <mat-icon>edit_note</mat-icon></button>
         </mat-card>
     </mat-grid-tile>
     <mat-grid-tile>
-        <mat-card class="card">
-            <img class="img" src="assets\enter.jpg"> &nbsp;
+        <mat-card class="example-card">
+            <img mat-card-sm-image class="img" src="assets\enter.jpg"> &nbsp;
             <button mat-raised-button color="primary" routerLink="/bussiness"> Entertrain<mat-icon>accessibility_new</mat-icon></button>
         </mat-card>
     </mat-grid-tile>
-  </mat-grid-list>
+  </mat-grid-list> -->
+ 
+
+  <!-- bootstrap cards -->
+  <!-- <div class="card-group">
+    <div class="card">
+        <img class="img" src="assets\bussiness.png"> 
+        <button class="card text-center" mat-raised-button color="primary" routerLink="/bussiness">Bussiness  <mat-icon> monetization_on</mat-icon></button>
+    </div>
+    <div class="card">
+        <img  class="img" src="assets\exam.webp">
+        <button mat-raised-button color="primary" routerLink="/registeration"> Exam <mat-icon>edit_note</mat-icon></button>
+    </div>
+    <div class="card">
+        <img class="img" src="assets\enter.jpg"> 
+        <button mat-raised-button color="primary" routerLink="/bussiness"> Entertrain<mat-icon>accessibility_new</mat-icon></button>
+    </div>
+  </div> -->
+  <!-- bootstrap cards -->
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card">
+        <img class="img-fluid rounded-start" src="assets\bussiness.png"> 
+        <div class="card-body">
+          <h5 class="card-title">Bussiness</h5>
+          <button type="button" class="btn btn-primary" routerLink="/bussiness">Bussiness <mat-icon> monetization_on</mat-icon></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img class="img-fluid rounded-start" src="assets\exam.webp">
+        <div class="card-body">
+          <h5 class="card-title">Exam</h5>
+
+          <button type="button" class="btn btn-primary" routerLink="/registeration"> Exam <mat-icon>edit_note</mat-icon></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img class="img-fluid rounded-start" src="assets\enter.jpg"> 
+        <div class="card-body">
+          <h5 class="card-title">Entertrainment</h5>
+          <button type="button" class="btn btn-primary" routerLink="/home"> Entertrain </button>
+        </div>
+      </div>
+    </div>
+        <!-- <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+        </div> -->
+  </div>    

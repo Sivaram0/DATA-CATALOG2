@@ -33,7 +33,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { SearchFilterPipe } from './search-filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +46,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     FooterComponent,
     RegisterationComponent,
     SampleQPaperComponent,
-    ResultsComponent
+    ResultsComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
