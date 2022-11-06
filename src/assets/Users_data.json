@@ -1,0 +1,52 @@
+ [
+    { "name":"sivarama",
+       "position":"Consultant",
+       "country":"india",
+       "project": "De&Dc"
+    },
+    { "name":"arunkumar",
+       "position":"Senior Consultant",
+       "country":"india",
+       "project": "Diva"
+    },
+    { "name":"Depthi",
+       "position":"manager",
+       "country":"india",
+       "project": "A&N Bank"
+    },
+    { "name":"Sheik Hussain",
+       "position":"Automation",
+       "country":"Pakistan",
+       "project": "NSE testing"
+    },
+    { "name":"john",
+       "position":"Bussiness Analyst",
+       "country":"usa",
+       "project": "Airflow"
+    },
+    { "name":"Ritika Akhenai",
+       "position":"Python Developer",
+       "country":"Japan",
+       "project": "SdtDe"
+    },
+    { "name":"sajjad Ali",
+       "position":"Data-enginer",
+       "country":"Afghanisthan",
+       "project": "Wpd Data Catalog"
+    },
+    { "name":"Dinesh Bhatt",
+       "position":"Senior Manager",
+       "country":"indinesia",
+       "project": "Nse Enterprises"
+    },
+    { "name":"Soumitha Roy",
+       "position":"Senior supervisior",
+       "country":"Srilanka",
+       "project": "Capgemini"
+    },
+    { "name":"Sutapa mukarji",
+       "position":"Recuiter",
+       "country":"maldevis",
+       "project": "HCL"
+    }
+]

@@ -9,12 +9,14 @@ import { UsersComponent } from './BussinessData/users/users.component';
 import { RegisterationComponent } from './Exam/registeration/registeration.component';
 import { SampleQPaperComponent } from './Exam/sample-q-paper/sample-q-paper.component';
 import { ResultsComponent } from './Exam/results/results.component';
+import { PracticeComponent } from './practice/practice.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login',pathMatch:'full'},
   {path:'login', component:LoginComponent},
   {path:'signup', component:SignupComponent},
   {path:'home', component:HomeComponent},
+  { path:'practice', component:PracticeComponent},
   {path:'bussiness', component:BussinessComponent,
     children: [
     {path:'clients', component:ClientsComponent},
@@ -32,7 +34,6 @@ const routes: Routes = [
   },
   { path:'registeration', component:RegisterationComponent},
   {path: '**', redirectTo:'home', pathMatch: 'full'}
-  
 ];
 
 @NgModule({

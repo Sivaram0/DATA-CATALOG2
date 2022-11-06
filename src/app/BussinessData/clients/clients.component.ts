@@ -1,4 +1,3 @@
-import { JsonPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
@@ -14,7 +13,7 @@ export interface users {
   styleUrls: ['./clients.component.css']
 })
 export class ClientsComponent implements OnInit {
-  public searchFilter: any = '';
+  
  cards:any = []
  dataSource = new MatTableDataSource(this.cards);
   constructor(private httpClient: HttpClient) { }
@@ -25,7 +24,7 @@ export class ClientsComponent implements OnInit {
     })
   }
   applyFilter(event: Event) {
-    console.log("filterdata" ,this.cards);
+    //console.log("filterdata" ,this.cards);
     const filterValue = (event.target as HTMLInputElement).value;
     this.cards.filter = filterValue.trim().toLowerCase();
   }

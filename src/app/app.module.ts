@@ -34,6 +34,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SearchFilterPipe } from './search-filter.pipe';
+import { MatTableModule } from '@angular/material/table';
+import { PracticeComponent } from './practice/practice.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +49,8 @@ import { SearchFilterPipe } from './search-filter.pipe';
     RegisterationComponent,
     SampleQPaperComponent,
     ResultsComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +78,7 @@ import { SearchFilterPipe } from './search-filter.pipe';
     MatListModule,
     MatGridListModule,
     MatTabsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
