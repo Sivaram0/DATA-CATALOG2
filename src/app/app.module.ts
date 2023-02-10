@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { LoginComponent } from './login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,37 +17,33 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
-import { SignupComponent } from './signup/signup.component';
-import { UsersComponent } from './BussinessData/users/users.component';
-import { ClientsComponent } from './BussinessData/clients/clients.component';
-import { HomeComponent } from './home/home.component';
-import { BussinessComponent } from './BussinessData/bussiness/bussiness.component';
-import { FooterComponent } from './footer/footer.component';
-import { RegisterationComponent } from './Exam/registeration/registeration.component';
-import { SampleQPaperComponent } from './Exam/sample-q-paper/sample-q-paper.component';
-import { ResultsComponent } from './Exam/results/results.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
-import { SearchFilterPipe } from './search-filter.pipe';
 import { MatTableModule } from '@angular/material/table';
+import { HomepComponent } from './homep/homep.component';
+import { WeatherComponent } from './weather/weather.component';
+import { ChildComponent } from './child/child.component';
+import { UsersService } from './users.service';
+import { TodoFormComponent } from './todo-form/todo-form.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { ExampleComponent } from './example/example.component';
+import { FormsComponent } from './forms/forms.component';
+import { EcomModule } from './ecom/ecom.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
-    SignupComponent,
-    UsersComponent,
-    ClientsComponent,
-    BussinessComponent,
-    FooterComponent,
-    RegisterationComponent,
-    SampleQPaperComponent,
-    ResultsComponent,
-    SearchFilterPipe,
+    HomepComponent,
+    WeatherComponent,
+    ChildComponent,
+    TodoFormComponent,
+    TodoListComponent,
+    ExampleComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,9 +71,10 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     MatGridListModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    EcomModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
